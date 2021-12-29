@@ -3,8 +3,8 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_nearby_connections_example/dataTransfer.dart';
 import 'package:flutter_nearby_connections_example/wifi.dart';
-// import 'package:permission_handler/permission_handler.dart';
-// import 'package:permission_handler/permission_handler.dart';
+import 'package:flutter_styled_toast/flutter_styled_toast.dart';
+import 'package:permission_handler/permission_handler.dart';
 import 'package:wifi_configuration_2/wifi_configuration_2.dart';
 
 void main() {
@@ -33,9 +33,19 @@ class _HomePageState extends State<HomePage> {
   void didChangeDependencies() {
     super.didChangeDependencies();
     // startClient();
-    // Permission.bluetooth.request();
-    // Permission.location.request();
-    // Permission..request();
+    requestPerms();
+  }
+
+  void requestPerms() async {
+    await [Permission.bluetooth, Permission.location].request();
+    // if (await Permission.location.isDenied) {
+    //   showToast("Location perms were denied");
+    // } else if (await Permission.location.isPermanentlyDenied) {
+    //   showToast("Location perms were permanently denied");
+    // }
+    // else {}
+    //   showToast("Location perms were granted");
+    // }
   }
 
   @override
@@ -76,10 +86,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ],
             ),
-            // child: BuildWithSocketStream(),
           ),
         ));
   }
 }
-
-// STEP1:  Stream setup
