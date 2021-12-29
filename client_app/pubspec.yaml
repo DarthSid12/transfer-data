@@ -16,8 +16,7 @@ dependencies:
   flutter_styled_toast: ^2.0.0
 
   flutter_nearby_connections: ^1.1.1
-  # permission_handler: ^6.1.0
-
+  permission_handler: ^8.3.0
   cupertino_icons: ^1.0.2
   device_info: ^2.0.0
   flutter_udid: ^2.0.0
