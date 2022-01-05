@@ -224,8 +224,8 @@ class _DevicesListScreenState extends State<DevicesListScreen> {
     }
     await nearbyService.init(
         serviceType: 'mpconn',
-        deviceName: "5TdXcH9YdZCOC2iCfN7j",
-        strategy: Strategy.Wi_Fi_P2P, // Wi_Fi_P2P, P2P_POINT_TO_POINT, P2P_STAR, P2P_CLUSTER ?
+        deviceName: devInfo,
+        strategy: Strategy.P2P_CLUSTER,
         callback: (isRunning) async {
           if (isRunning) {
             await nearbyService.stopAdvertisingPeer();
@@ -264,8 +264,6 @@ class _DevicesListScreenState extends State<DevicesListScreen> {
         nearbyService.dataReceivedSubscription(callback: (data) async {
       print("dataReceivedSubscription: ${jsonEncode(data)}");
       print("Message:" + data['message']);
-      nearbyService.sendMessage(
-          selectedDevice!.deviceId, "Received: "+data['message'].toString());
       Map arguments = jsonDecode(data['message'].toString());
 
       WifiConnectionStatus status = await WifiConfiguration().connectToWifi(

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/zuwuko/pw/syne/transfer-data/client_app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-ta/values-ta.xml",
+            "outputFile": "/home/zuwuko/Downloads/transfer-data-main/client_app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-ta/values-ta.xml",
             "map": [
                 {
                     "source": "/home/zuwuko/.gradle/caches/transforms-2/files-2.1/8f3e9dd5c7f9d90ad9535c657f504042/jetified-play-services-base-17.3.0/res/values-ta/values.xml",

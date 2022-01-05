@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/zuwuko/pw/syne/transfer-data/client_app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-bg/values-bg.xml",
+            "outputFile": "/home/zuwuko/Downloads/transfer-data-main/client_app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-bg/values-bg.xml",
             "map": [
                 {
                     "source": "/home/zuwuko/.gradle/caches/transforms-2/files-2.1/fe5e4072d0faf6bb1afdf146acaf762c/core-1.8.0-alpha02/res/values-bg/values-bg.xml",

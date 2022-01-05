@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/zuwuko/pw/syne/transfer-data/client_app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-fr/values-fr.xml",
+            "outputFile": "/home/zuwuko/Downloads/transfer-data-main/client_app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-fr/values-fr.xml",
             "map": [
                 {
                     "source": "/home/zuwuko/.gradle/caches/transforms-2/files-2.1/c06dd8a2c0fb1f2d54d23e35744e39fc/jetified-play-services-basement-17.3.0/res/values-fr/values.xml",

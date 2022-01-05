@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/zuwuko/pw/syne/transfer-data/client_app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/home/zuwuko/Downloads/transfer-data-main/client_app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
                     "source": "/home/zuwuko/.gradle/caches/transforms-2/files-2.1/8f3e9dd5c7f9d90ad9535c657f504042/jetified-play-services-base-17.3.0/res/values/values.xml",
@@ -23,7 +23,24 @@
                     }
                 },
                 {
-                    "source": "/home/zuwuko/pw/syne/transfer-data/client_app/android/app/src/main/res/values/styles.xml",
+                    "source": "/home/zuwuko/.gradle/caches/transforms-2/files-2.1/19d8e8c370b60807d7f57f7dcb2dee89/lifecycle-runtime-2.3.1/res/values/values.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "42",
+                        "endOffsets": "93"
+                    },
+                    "to": {
+                        "startLines": "90",
+                        "startColumns": "4",
+                        "startOffsets": "5646",
+                        "endColumns": "42",
+                        "endOffsets": "5684"
+                    }
+                },
+                {
+                    "source": "/home/zuwuko/Downloads/transfer-data-main/client_app/android/app/src/main/res/values/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
@@ -39,23 +56,6 @@
                         "endLines": "116,119",
                         "endColumns": "12,12",
                         "endOffsets": "8523,8688"
-                    }
-                },
-                {
-                    "source": "/home/zuwuko/.gradle/caches/transforms-2/files-2.1/19d8e8c370b60807d7f57f7dcb2dee89/lifecycle-runtime-2.3.1/res/values/values.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "42",
-                        "endOffsets": "93"
-                    },
-                    "to": {
-                        "startLines": "90",
-                        "startColumns": "4",
-                        "startOffsets": "5646",
-                        "endColumns": "42",
-                        "endOffsets": "5684"
                     }
                 },
                 {

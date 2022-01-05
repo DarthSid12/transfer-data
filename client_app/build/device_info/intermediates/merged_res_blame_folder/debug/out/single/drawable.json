@@ -1,18 +1,18 @@
 [
     {
-        "merged": "/home/zuwuko/pw/syne/transfer-data/client_app/build/device_info/intermediates/res/merged/debug/drawable/notification_icon_background.xml",
+        "merged": "/home/zuwuko/Downloads/transfer-data-main/client_app/build/device_info/intermediates/res/merged/debug/drawable/notification_icon_background.xml",
         "source": "/home/zuwuko/.gradle/caches/transforms-2/files-2.1/ce98c99bb3a03883478cdd14f4d8451b/core-1.6.0/res/drawable/notification_icon_background.xml"
     },
     {
-        "merged": "/home/zuwuko/pw/syne/transfer-data/client_app/build/device_info/intermediates/res/merged/debug/drawable/notification_bg.xml",
+        "merged": "/home/zuwuko/Downloads/transfer-data-main/client_app/build/device_info/intermediates/res/merged/debug/drawable/notification_tile_bg.xml",
+        "source": "/home/zuwuko/.gradle/caches/transforms-2/files-2.1/ce98c99bb3a03883478cdd14f4d8451b/core-1.6.0/res/drawable/notification_tile_bg.xml"
+    },
+    {
+        "merged": "/home/zuwuko/Downloads/transfer-data-main/client_app/build/device_info/intermediates/res/merged/debug/drawable/notification_bg.xml",
         "source": "/home/zuwuko/.gradle/caches/transforms-2/files-2.1/ce98c99bb3a03883478cdd14f4d8451b/core-1.6.0/res/drawable/notification_bg.xml"
     },
     {
-        "merged": "/home/zuwuko/pw/syne/transfer-data/client_app/build/device_info/intermediates/res/merged/debug/drawable/notification_bg_low.xml",
+        "merged": "/home/zuwuko/Downloads/transfer-data-main/client_app/build/device_info/intermediates/res/merged/debug/drawable/notification_bg_low.xml",
         "source": "/home/zuwuko/.gradle/caches/transforms-2/files-2.1/ce98c99bb3a03883478cdd14f4d8451b/core-1.6.0/res/drawable/notification_bg_low.xml"
-    },
-    {
-        "merged": "/home/zuwuko/pw/syne/transfer-data/client_app/build/device_info/intermediates/res/merged/debug/drawable/notification_tile_bg.xml",
-        "source": "/home/zuwuko/.gradle/caches/transforms-2/files-2.1/ce98c99bb3a03883478cdd14f4d8451b/core-1.6.0/res/drawable/notification_tile_bg.xml"
     }
 ]

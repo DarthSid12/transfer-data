@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/zuwuko/pw/syne/transfer-data/client_app/build/device_info/intermediates/res/merged/debug/values-nb/values-nb.xml",
+            "outputFile": "/home/zuwuko/Downloads/transfer-data-main/client_app/build/device_info/intermediates/res/merged/debug/values-nb/values-nb.xml",
             "map": [
                 {
                     "source": "/home/zuwuko/.gradle/caches/transforms-2/files-2.1/ce98c99bb3a03883478cdd14f4d8451b/core-1.6.0/res/values-nb/values-nb.xml",
@@ -16,7 +16,7 @@
             ]
         },
         {
-            "outputFile": "/home/zuwuko/pw/syne/transfer-data/client_app/build/device_info/intermediates/incremental/mergeDebugResources/merged.dir/values-nb/values-nb.xml",
+            "outputFile": "/home/zuwuko/Downloads/transfer-data-main/client_app/build/device_info/intermediates/incremental/mergeDebugResources/merged.dir/values-nb/values-nb.xml",
             "map": [
                 {
                     "source": "/home/zuwuko/.gradle/caches/transforms-2/files-2.1/ce98c99bb3a03883478cdd14f4d8451b/core-1.6.0/res/values-nb/values-nb.xml",
