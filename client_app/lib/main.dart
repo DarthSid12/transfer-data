@@ -65,7 +65,7 @@ class _HomePageState extends State<HomePage> {
                 ElevatedButton(
                   onPressed: () async {
                     Map arguments =
-                        (await Navigator.pushNamed(context, '/wifi')) as Map;
+                    (await Navigator.pushNamed(context, '/wifi')) as Map;
                     wifiNetwork = arguments['wifiNetwork'];
                     wifiPassword = arguments['pass'];
                   },

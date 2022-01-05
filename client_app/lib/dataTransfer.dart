@@ -102,19 +102,19 @@ class _DataTransferPageState extends State<DataTransferPage> {
                       children: [
                         Expanded(
                             child: GestureDetector(
-                          onTap: () => _onTabItemListener(device),
-                          child: Column(
-                            children: [
-                              Text(device.deviceName),
-                              Text(
-                                getStateName(device.state),
-                                style: TextStyle(
-                                    color: getStateColor(device.state)),
+                              onTap: () => _onTabItemListener(device),
+                              child: Column(
+                                children: [
+                                  Text(device.deviceName),
+                                  Text(
+                                    getStateName(device.state),
+                                    style: TextStyle(
+                                        color: getStateColor(device.state)),
+                                  ),
+                                ],
+                                crossAxisAlignment: CrossAxisAlignment.start,
                               ),
-                            ],
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                          ),
-                        )),
+                            )),
                         // Request connect
                         GestureDetector(
                           onTap: () => _onButtonClicked(device),
@@ -264,7 +264,7 @@ class _DataTransferPageState extends State<DataTransferPage> {
     await nearbyService.init(
         serviceType: 'mpconn',
         deviceName: devInfo,
-        strategy: Strategy.P2P_CLUSTER,
+        strategy: Strategy.Wi_Fi_P2P, // Wi_Fi_P2P, P2P_POINT_TO_POINT, P2P_STAR, P2P_CLUSTER ?
         callback: (isRunning) async {
           if (isRunning) {
             // if (widget.deviceType == DeviceType.browser) {
@@ -282,37 +282,70 @@ class _DataTransferPageState extends State<DataTransferPage> {
         });
     subscription =
         nearbyService.stateChangedSubscription(callback: (devicesList) {
-      devicesList.forEach((element) {
-        print(
-            " deviceId: ${element.deviceId} | deviceName: ${element.deviceName} | state: ${element.state}");
-
-        if (Platform.isAndroid) {
+          devicesList.forEach((element) {
+//Works doesnt crash server app but doesnt get a response connection sucessful from server
+            /*
+        if (element.deviceName == "5TdXcH9YdZCOC2iCfN7j") {
           if (element.state == SessionState.connected) {
-            nearbyService.stopBrowsingForPeers();
+            //after auto connect, now auto send
+            print("*** Auto sending credentials: " + jsonEncode(arguments));
+            nearbyService.sendMessage(element.deviceId, jsonEncode(arguments));
           } else {
-            nearbyService.startBrowsingForPeers();
+            print("** Auto connecting to: 5TdXcH9YdZCOC2iCfN7j");
+            _onButtonClicked(element);
           }
         }
-      });
+*/
+            //crashes server app but it connects server to to wIFI
+            /*if (element.deviceName == "5TdXcH9YdZCOC2iCfN7j") {
+          if (element.state == SessionState.connected) {
+            print("** Auto connecting to: 5TdXcH9YdZCOC2iCfN7j");
+            print("*** Auto sending credentials: " + jsonEncode(arguments));
+            nearbyService.sendMessage(element.deviceId, jsonEncode(arguments));
+          } else {
+            _onButtonClicked(element);
+          }
+        }
+        */
 
-      setState(() {
-        devices.clear();
-        devices.addAll(devicesList);
-        connectedDevices.clear();
-        connectedDevices.addAll(devicesList
-            .where((d) => d.state == SessionState.connected)
-            .toList());
-      });
-    });
+
+            /*if(element.deviceName == "5TdXcH9YdZCOC2iCfN7j"){
+          print("** Auto connecting to: 5TdXcH9YdZCOC2iCfN7j");
+          _onButtonClicked(element);
+          //after auto connect, now auto send
+          print("*** Auto sending credentials: "+jsonEncode(arguments));
+          nearbyService.sendMessage(element.deviceId, jsonEncode(arguments));
+        }*/
+            print(
+                " deviceId: ${element.deviceId} | deviceName: ${element.deviceName} | state: ${element.state}");
+
+            if (Platform.isAndroid) {
+              if (element.state == SessionState.connected) {
+                nearbyService.stopBrowsingForPeers();
+              } else {
+                nearbyService.startBrowsingForPeers();
+              }
+            }
+          });
+
+          setState(() {
+            devices.clear();
+            devices.addAll(devicesList);
+            connectedDevices.clear();
+            connectedDevices.addAll(devicesList
+                .where((d) => d.state == SessionState.connected)
+                .toList());
+          });
+        });
 
     receivedDataSubscription =
         nearbyService.dataReceivedSubscription(callback: (data) {
-      print("dataReceivedSubscription: ${jsonEncode(data)}");
-      showToast(jsonEncode(data),
-          context: context,
-          axis: Axis.horizontal,
-          alignment: Alignment.center,
-          position: StyledToastPosition.bottom);
-    });
+          print("dataReceivedSubscription: ${jsonEncode(data)}");
+          showToast(jsonEncode(data),
+              context: context,
+              axis: Axis.horizontal,
+              alignment: Alignment.center,
+              position: StyledToastPosition.bottom);
+        });
   }
 }
