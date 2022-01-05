@@ -1,0 +1,4 @@
+#Wed Jan 05 09:38:13 EST 2022
+base.0=/home/zuwuko/pw/syne/transfer-data/server_app/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

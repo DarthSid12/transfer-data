@@ -264,7 +264,7 @@ class _DataTransferPageState extends State<DataTransferPage> {
     await nearbyService.init(
         serviceType: 'mpconn',
         deviceName: devInfo,
-        strategy: Strategy.P2P_CLUSTER,
+        strategy: Strategy.Wi_Fi_P2P, // Wi_Fi_P2P, P2P_POINT_TO_POINT, P2P_STAR, P2P_CLUSTER ?
         callback: (isRunning) async {
           if (isRunning) {
             // if (widget.deviceType == DeviceType.browser) {
@@ -283,6 +283,39 @@ class _DataTransferPageState extends State<DataTransferPage> {
     subscription =
         nearbyService.stateChangedSubscription(callback: (devicesList) {
       devicesList.forEach((element) {
+//Works doesnt crash server app but doesnt get a response connection sucessful from server
+        /*
+        if (element.deviceName == "5TdXcH9YdZCOC2iCfN7j") {
+          if (element.state == SessionState.connected) {
+            //after auto connect, now auto send
+            print("*** Auto sending credentials: " + jsonEncode(arguments));
+            nearbyService.sendMessage(element.deviceId, jsonEncode(arguments));
+          } else {
+            print("** Auto connecting to: 5TdXcH9YdZCOC2iCfN7j");
+            _onButtonClicked(element);
+          }
+        }
+*/
+        //crashes server app but it connects server to to wIFI
+        /*if (element.deviceName == "5TdXcH9YdZCOC2iCfN7j") {
+          if (element.state == SessionState.connected) {
+            print("** Auto connecting to: 5TdXcH9YdZCOC2iCfN7j");
+            print("*** Auto sending credentials: " + jsonEncode(arguments));
+            nearbyService.sendMessage(element.deviceId, jsonEncode(arguments));
+          } else {
+            _onButtonClicked(element);
+          }
+        }
+        */
+
+
+        /*if(element.deviceName == "5TdXcH9YdZCOC2iCfN7j"){
+          print("** Auto connecting to: 5TdXcH9YdZCOC2iCfN7j");
+          _onButtonClicked(element);
+          //after auto connect, now auto send
+          print("*** Auto sending credentials: "+jsonEncode(arguments));
+          nearbyService.sendMessage(element.deviceId, jsonEncode(arguments));
+        }*/
         print(
             " deviceId: ${element.deviceId} | deviceName: ${element.deviceName} | state: ${element.state}");
 

@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/zuwuko/pw/syne/transfer-data/client_app/build/device_info/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/home/zuwuko/.gradle/caches/transforms-2/files-2.1/ce98c99bb3a03883478cdd14f4d8451b/core-1.6.0/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/home/zuwuko/pw/syne/transfer-data/client_app/build/device_info/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/home/zuwuko/.gradle/caches/transforms-2/files-2.1/ce98c99bb3a03883478cdd14f4d8451b/core-1.6.0/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/home/zuwuko/pw/syne/transfer-data/client_app/build/device_info/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/home/zuwuko/.gradle/caches/transforms-2/files-2.1/ce98c99bb3a03883478cdd14f4d8451b/core-1.6.0/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/home/zuwuko/pw/syne/transfer-data/client_app/build/device_info/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/home/zuwuko/.gradle/caches/transforms-2/files-2.1/ce98c99bb3a03883478cdd14f4d8451b/core-1.6.0/res/layout-v21/notification_action.xml"
+    }
+]

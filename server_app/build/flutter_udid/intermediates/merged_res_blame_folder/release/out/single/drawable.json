@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/zuwuko/pw/syne/transfer-data/server_app/build/flutter_udid/intermediates/res/merged/release/drawable/notification_tile_bg.xml",
+        "source": "/home/zuwuko/.gradle/caches/transforms-2/files-2.1/ce98c99bb3a03883478cdd14f4d8451b/core-1.6.0/res/drawable/notification_tile_bg.xml"
+    },
+    {
+        "merged": "/home/zuwuko/pw/syne/transfer-data/server_app/build/flutter_udid/intermediates/res/merged/release/drawable/notification_icon_background.xml",
+        "source": "/home/zuwuko/.gradle/caches/transforms-2/files-2.1/ce98c99bb3a03883478cdd14f4d8451b/core-1.6.0/res/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "/home/zuwuko/pw/syne/transfer-data/server_app/build/flutter_udid/intermediates/res/merged/release/drawable/notification_bg.xml",
+        "source": "/home/zuwuko/.gradle/caches/transforms-2/files-2.1/ce98c99bb3a03883478cdd14f4d8451b/core-1.6.0/res/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "/home/zuwuko/pw/syne/transfer-data/server_app/build/flutter_udid/intermediates/res/merged/release/drawable/notification_bg_low.xml",
+        "source": "/home/zuwuko/.gradle/caches/transforms-2/files-2.1/ce98c99bb3a03883478cdd14f4d8451b/core-1.6.0/res/drawable/notification_bg_low.xml"
+    }
+]

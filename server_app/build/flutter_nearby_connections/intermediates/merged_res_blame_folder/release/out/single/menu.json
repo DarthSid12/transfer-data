@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/zuwuko/pw/syne/transfer-data/server_app/build/flutter_nearby_connections/intermediates/res/merged/release/menu/example_menu2.xml",
+        "source": "/home/zuwuko/.gradle/caches/transforms-2/files-2.1/fe5e4072d0faf6bb1afdf146acaf762c/core-1.8.0-alpha02/res/menu/example_menu2.xml"
+    },
+    {
+        "merged": "/home/zuwuko/pw/syne/transfer-data/server_app/build/flutter_nearby_connections/intermediates/res/merged/release/menu/example_menu.xml",
+        "source": "/home/zuwuko/.gradle/caches/transforms-2/files-2.1/fe5e4072d0faf6bb1afdf146acaf762c/core-1.8.0-alpha02/res/menu/example_menu.xml"
+    }
+]

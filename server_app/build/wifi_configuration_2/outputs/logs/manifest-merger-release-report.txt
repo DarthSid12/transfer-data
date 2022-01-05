@@ -1,0 +1,23 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/wifi_configuration_2-1.1.2+1/android/src/main/AndroidManifest.xml:1:1-5:12
+INJECTED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/wifi_configuration_2-1.1.2+1/android/src/main/AndroidManifest.xml:1:1-5:12
+INJECTED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/wifi_configuration_2-1.1.2+1/android/src/main/AndroidManifest.xml:1:1-5:12
+	package
+		ADDED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/wifi_configuration_2-1.1.2+1/android/src/main/AndroidManifest.xml:2:3-43
+		INJECTED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/wifi_configuration_2-1.1.2+1/android/src/main/AndroidManifest.xml
+		INJECTED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/wifi_configuration_2-1.1.2+1/android/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/wifi_configuration_2-1.1.2+1/android/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/wifi_configuration_2-1.1.2+1/android/src/main/AndroidManifest.xml:4:5-79
+	android:name
+		ADDED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/wifi_configuration_2-1.1.2+1/android/src/main/AndroidManifest.xml:4:22-76
+uses-sdk
+INJECTED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/wifi_configuration_2-1.1.2+1/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/wifi_configuration_2-1.1.2+1/android/src/main/AndroidManifest.xml
+INJECTED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/wifi_configuration_2-1.1.2+1/android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/wifi_configuration_2-1.1.2+1/android/src/main/AndroidManifest.xml
+		ADDED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/wifi_configuration_2-1.1.2+1/android/src/main/AndroidManifest.xml
+		INJECTED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/wifi_configuration_2-1.1.2+1/android/src/main/AndroidManifest.xml

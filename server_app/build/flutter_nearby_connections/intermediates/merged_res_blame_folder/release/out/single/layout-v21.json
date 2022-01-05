@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/zuwuko/pw/syne/transfer-data/server_app/build/flutter_nearby_connections/intermediates/res/merged/release/layout-v21/notification_template_icon_group.xml",
+        "source": "/home/zuwuko/.gradle/caches/transforms-2/files-2.1/fe5e4072d0faf6bb1afdf146acaf762c/core-1.8.0-alpha02/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/home/zuwuko/pw/syne/transfer-data/server_app/build/flutter_nearby_connections/intermediates/res/merged/release/layout-v21/notification_action.xml",
+        "source": "/home/zuwuko/.gradle/caches/transforms-2/files-2.1/fe5e4072d0faf6bb1afdf146acaf762c/core-1.8.0-alpha02/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/home/zuwuko/pw/syne/transfer-data/server_app/build/flutter_nearby_connections/intermediates/res/merged/release/layout-v21/notification_action_tombstone.xml",
+        "source": "/home/zuwuko/.gradle/caches/transforms-2/files-2.1/fe5e4072d0faf6bb1afdf146acaf762c/core-1.8.0-alpha02/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/home/zuwuko/pw/syne/transfer-data/server_app/build/flutter_nearby_connections/intermediates/res/merged/release/layout-v21/notification_template_custom_big.xml",
+        "source": "/home/zuwuko/.gradle/caches/transforms-2/files-2.1/fe5e4072d0faf6bb1afdf146acaf762c/core-1.8.0-alpha02/res/layout-v21/notification_template_custom_big.xml"
+    }
+]

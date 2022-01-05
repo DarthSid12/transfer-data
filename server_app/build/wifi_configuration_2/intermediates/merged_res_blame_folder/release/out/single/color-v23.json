@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "/home/zuwuko/pw/syne/transfer-data/server_app/build/wifi_configuration_2/intermediates/res/merged/release/color-v23/abc_btn_colored_text_material.xml",
+        "source": "/home/zuwuko/.gradle/caches/transforms-2/files-2.1/2196017f08f07b7e4b4c347c3565fa2f/appcompat-1.0.0/res/color-v23/abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "/home/zuwuko/pw/syne/transfer-data/server_app/build/wifi_configuration_2/intermediates/res/merged/release/color-v23/abc_btn_colored_borderless_text_material.xml",
+        "source": "/home/zuwuko/.gradle/caches/transforms-2/files-2.1/2196017f08f07b7e4b4c347c3565fa2f/appcompat-1.0.0/res/color-v23/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "/home/zuwuko/pw/syne/transfer-data/server_app/build/wifi_configuration_2/intermediates/res/merged/release/color-v23/abc_tint_seek_thumb.xml",
+        "source": "/home/zuwuko/.gradle/caches/transforms-2/files-2.1/2196017f08f07b7e4b4c347c3565fa2f/appcompat-1.0.0/res/color-v23/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/home/zuwuko/pw/syne/transfer-data/server_app/build/wifi_configuration_2/intermediates/res/merged/release/color-v23/abc_color_highlight_material.xml",
+        "source": "/home/zuwuko/.gradle/caches/transforms-2/files-2.1/2196017f08f07b7e4b4c347c3565fa2f/appcompat-1.0.0/res/color-v23/abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "/home/zuwuko/pw/syne/transfer-data/server_app/build/wifi_configuration_2/intermediates/res/merged/release/color-v23/abc_tint_switch_track.xml",
+        "source": "/home/zuwuko/.gradle/caches/transforms-2/files-2.1/2196017f08f07b7e4b4c347c3565fa2f/appcompat-1.0.0/res/color-v23/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "/home/zuwuko/pw/syne/transfer-data/server_app/build/wifi_configuration_2/intermediates/res/merged/release/color-v23/abc_tint_edittext.xml",
+        "source": "/home/zuwuko/.gradle/caches/transforms-2/files-2.1/2196017f08f07b7e4b4c347c3565fa2f/appcompat-1.0.0/res/color-v23/abc_tint_edittext.xml"
+    },
+    {
+        "merged": "/home/zuwuko/pw/syne/transfer-data/server_app/build/wifi_configuration_2/intermediates/res/merged/release/color-v23/abc_tint_spinner.xml",
+        "source": "/home/zuwuko/.gradle/caches/transforms-2/files-2.1/2196017f08f07b7e4b4c347c3565fa2f/appcompat-1.0.0/res/color-v23/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/home/zuwuko/pw/syne/transfer-data/server_app/build/wifi_configuration_2/intermediates/res/merged/release/color-v23/abc_tint_btn_checkable.xml",
+        "source": "/home/zuwuko/.gradle/caches/transforms-2/files-2.1/2196017f08f07b7e4b4c347c3565fa2f/appcompat-1.0.0/res/color-v23/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/home/zuwuko/pw/syne/transfer-data/server_app/build/wifi_configuration_2/intermediates/res/merged/release/color-v23/abc_tint_default.xml",
+        "source": "/home/zuwuko/.gradle/caches/transforms-2/files-2.1/2196017f08f07b7e4b4c347c3565fa2f/appcompat-1.0.0/res/color-v23/abc_tint_default.xml"
+    }
+]

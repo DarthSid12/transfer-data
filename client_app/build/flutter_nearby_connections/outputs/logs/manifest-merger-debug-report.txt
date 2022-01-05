@@ -1,0 +1,81 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_nearby_connections-1.1.1/android/src/main/AndroidManifest.xml:1:1-30:12
+INJECTED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_nearby_connections-1.1.1/android/src/main/AndroidManifest.xml:1:1-30:12
+INJECTED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_nearby_connections-1.1.1/android/src/main/AndroidManifest.xml:1:1-30:12
+	package
+		ADDED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_nearby_connections-1.1.1/android/src/main/AndroidManifest.xml:2:5-52
+		INJECTED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_nearby_connections-1.1.1/android/src/main/AndroidManifest.xml
+		INJECTED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_nearby_connections-1.1.1/android/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_nearby_connections-1.1.1/android/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.BLUETOOTH
+ADDED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_nearby_connections-1.1.1/android/src/main/AndroidManifest.xml:4:5-68
+	android:name
+		ADDED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_nearby_connections-1.1.1/android/src/main/AndroidManifest.xml:4:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_nearby_connections-1.1.1/android/src/main/AndroidManifest.xml:5:5-74
+	android:name
+		ADDED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_nearby_connections-1.1.1/android/src/main/AndroidManifest.xml:5:22-71
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_nearby_connections-1.1.1/android/src/main/AndroidManifest.xml:7:5-76
+	android:name
+		ADDED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_nearby_connections-1.1.1/android/src/main/AndroidManifest.xml:7:22-73
+uses-permission#android.permission.BROADCAST_STICKY
+ADDED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_nearby_connections-1.1.1/android/src/main/AndroidManifest.xml:8:5-75
+	android:name
+		ADDED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_nearby_connections-1.1.1/android/src/main/AndroidManifest.xml:8:22-72
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_nearby_connections-1.1.1/android/src/main/AndroidManifest.xml:9:5-76
+	android:name
+		ADDED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_nearby_connections-1.1.1/android/src/main/AndroidManifest.xml:9:22-73
+uses-permission#android.permission.CHANGE_NETWORK_STATE
+ADDED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_nearby_connections-1.1.1/android/src/main/AndroidManifest.xml:10:5-79
+	android:name
+		ADDED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_nearby_connections-1.1.1/android/src/main/AndroidManifest.xml:10:22-76
+uses-permission#android.permission.INTERNET
+ADDED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_nearby_connections-1.1.1/android/src/main/AndroidManifest.xml:11:5-67
+	android:name
+		ADDED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_nearby_connections-1.1.1/android/src/main/AndroidManifest.xml:11:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_nearby_connections-1.1.1/android/src/main/AndroidManifest.xml:12:5-79
+	android:name
+		ADDED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_nearby_connections-1.1.1/android/src/main/AndroidManifest.xml:12:22-76
+uses-feature#android.hardware.wifi.direct
+ADDED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_nearby_connections-1.1.1/android/src/main/AndroidManifest.xml:14:5-65
+	android:name
+		ADDED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_nearby_connections-1.1.1/android/src/main/AndroidManifest.xml:14:19-62
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_nearby_connections-1.1.1/android/src/main/AndroidManifest.xml:16:5-81
+	android:name
+		ADDED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_nearby_connections-1.1.1/android/src/main/AndroidManifest.xml:16:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_nearby_connections-1.1.1/android/src/main/AndroidManifest.xml:17:5-79
+	android:name
+		ADDED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_nearby_connections-1.1.1/android/src/main/AndroidManifest.xml:17:22-76
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_nearby_connections-1.1.1/android/src/main/AndroidManifest.xml:19:5-67
+	android:name
+		ADDED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_nearby_connections-1.1.1/android/src/main/AndroidManifest.xml:19:22-65
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_nearby_connections-1.1.1/android/src/main/AndroidManifest.xml:20:5-77
+	android:name
+		ADDED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_nearby_connections-1.1.1/android/src/main/AndroidManifest.xml:20:22-74
+application
+ADDED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_nearby_connections-1.1.1/android/src/main/AndroidManifest.xml:22:5-29:19
+service#com.nankai.flutter_nearby_connections.NearbyService
+ADDED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_nearby_connections-1.1.1/android/src/main/AndroidManifest.xml:23:9-26:39
+	android:enabled
+		ADDED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_nearby_connections-1.1.1/android/src/main/AndroidManifest.xml:25:13-35
+	android:exported
+		ADDED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_nearby_connections-1.1.1/android/src/main/AndroidManifest.xml:26:13-37
+	android:name
+		ADDED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_nearby_connections-1.1.1/android/src/main/AndroidManifest.xml:24:13-42
+uses-sdk
+INJECTED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_nearby_connections-1.1.1/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_nearby_connections-1.1.1/android/src/main/AndroidManifest.xml
+INJECTED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_nearby_connections-1.1.1/android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_nearby_connections-1.1.1/android/src/main/AndroidManifest.xml
+		ADDED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_nearby_connections-1.1.1/android/src/main/AndroidManifest.xml
+		INJECTED from /home/zuwuko/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_nearby_connections-1.1.1/android/src/main/AndroidManifest.xml

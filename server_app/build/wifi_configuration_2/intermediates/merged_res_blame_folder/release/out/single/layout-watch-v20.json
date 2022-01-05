@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/zuwuko/pw/syne/transfer-data/server_app/build/wifi_configuration_2/intermediates/res/merged/release/layout-watch-v20/abc_alert_dialog_title_material.xml",
+        "source": "/home/zuwuko/.gradle/caches/transforms-2/files-2.1/2196017f08f07b7e4b4c347c3565fa2f/appcompat-1.0.0/res/layout-watch-v20/abc_alert_dialog_title_material.xml"
+    },
+    {
+        "merged": "/home/zuwuko/pw/syne/transfer-data/server_app/build/wifi_configuration_2/intermediates/res/merged/release/layout-watch-v20/abc_alert_dialog_button_bar_material.xml",
+        "source": "/home/zuwuko/.gradle/caches/transforms-2/files-2.1/2196017f08f07b7e4b4c347c3565fa2f/appcompat-1.0.0/res/layout-watch-v20/abc_alert_dialog_button_bar_material.xml"
+    }
+]
