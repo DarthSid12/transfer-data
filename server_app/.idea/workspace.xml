@@ -30,6 +30,7 @@
       <change beforePath="$PROJECT_DIR$/../../sn-postman" beforeDir="false" afterPath="$PROJECT_DIR$/../../sn-postman" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../sn-proxy" beforeDir="false" afterPath="$PROJECT_DIR$/../../sn-proxy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../sn-services" beforeDir="false" afterPath="$PROJECT_DIR$/../../sn-services" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +39,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/home/zuwuko/.android/avd/Nexus5X_API29.avd]" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="22w7bKwN1CkAoek1jPv2qY7hXUr" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />

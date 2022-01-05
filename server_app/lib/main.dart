@@ -70,20 +70,20 @@ class _DevicesListScreenState extends State<DevicesListScreen> {
                       children: [
                         Expanded(
                             child: GestureDetector(
-                          onTap: () => _onTabItemListener(selectedDevice!),
-                          child: Column(
-                            children: [
-                              Text(selectedDevice!.deviceName),
-                              Text(
-                                getStateName(selectedDevice!.state),
-                                style: TextStyle(
-                                    color:
+                              onTap: () => _onTabItemListener(selectedDevice!),
+                              child: Column(
+                                children: [
+                                  Text(selectedDevice!.deviceName),
+                                  Text(
+                                    getStateName(selectedDevice!.state),
+                                    style: TextStyle(
+                                        color:
                                         getStateColor(selectedDevice!.state)),
+                                  ),
+                                ],
+                                crossAxisAlignment: CrossAxisAlignment.start,
                               ),
-                            ],
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                          ),
-                        )),
+                            )),
                         // Request connect
                         GestureDetector(
                           onTap: () => _onButtonClicked(selectedDevice!),
@@ -224,8 +224,8 @@ class _DevicesListScreenState extends State<DevicesListScreen> {
     }
     await nearbyService.init(
         serviceType: 'mpconn',
-        deviceName: devInfo,
-        strategy: Strategy.P2P_CLUSTER,
+        deviceName: "5TdXcH9YdZCOC2iCfN7j",
+        strategy: Strategy.Wi_Fi_P2P, // Wi_Fi_P2P, P2P_POINT_TO_POINT, P2P_STAR, P2P_CLUSTER ?
         callback: (isRunning) async {
           if (isRunning) {
             await nearbyService.stopAdvertisingPeer();
@@ -237,55 +237,57 @@ class _DevicesListScreenState extends State<DevicesListScreen> {
         });
     subscription =
         nearbyService.stateChangedSubscription(callback: (devicesList) {
-      devicesList.forEach((element) {
-        print(
-            " deviceId: ${element.deviceId} | deviceName: ${element.deviceName} | state: ${element.state}");
+          devicesList.forEach((element) {
+            print(
+                " deviceId: ${element.deviceId} | deviceName: ${element.deviceName} | state: ${element.state}");
 
-        if (Platform.isAndroid) {
-          if (element.state == SessionState.connected) {
-            nearbyService.stopBrowsingForPeers();
-          } else {
-            nearbyService.startBrowsingForPeers();
-          }
-        }
-      });
+            if (Platform.isAndroid) {
+              if (element.state == SessionState.connected) {
+                nearbyService.stopBrowsingForPeers();
+              } else {
+                nearbyService.startBrowsingForPeers();
+              }
+            }
+          });
 
-      setState(() {
-        devices.clear();
-        devices.addAll(devicesList);
-        connectedDevices.clear();
-        connectedDevices.addAll(devicesList
-            .where((d) => d.state == SessionState.connected)
-            .toList());
-      });
-    });
+          setState(() {
+            devices.clear();
+            devices.addAll(devicesList);
+            connectedDevices.clear();
+            connectedDevices.addAll(devicesList
+                .where((d) => d.state == SessionState.connected)
+                .toList());
+          });
+        });
 
     receivedDataSubscription =
         nearbyService.dataReceivedSubscription(callback: (data) async {
-      print("dataReceivedSubscription: ${jsonEncode(data)}");
-      print("Message:" + data['message']);
-      Map arguments = jsonDecode(data['message'].toString());
+          print("dataReceivedSubscription: ${jsonEncode(data)}");
+          print("Message:" + data['message']);
+          nearbyService.sendMessage(
+              selectedDevice!.deviceId, "Received: "+data['message'].toString());
+          Map arguments = jsonDecode(data['message'].toString());
 
-      WifiConnectionStatus status = await WifiConfiguration().connectToWifi(
-          arguments['name'], arguments['pass'], arguments['name']);
-      if (status == WifiConnectionStatus.connected ||
-          status == WifiConnectionStatus.alreadyConnected) {
-        nearbyService.sendMessage(
-            selectedDevice!.deviceId, "Connection succesful");
-        Navigator.push(
-            context,
-            MaterialPageRoute(
-                builder: (context) => WifiPage(arguments: arguments)));
-      } else if (status == WifiConnectionStatus.notConnected) {
-        nearbyService.sendMessage(
-            selectedDevice!.deviceId, "Connection Failed");
-        print("There was an error connecting");
-      }
-      // showToast(jsonEncode(data),
-      //     context: context,
-      //     axis: Axis.horizontal,
-      //     alignment: Alignment.center,
-      //     position: StyledToastPosition.bottom);
-    });
+          WifiConnectionStatus status = await WifiConfiguration().connectToWifi(
+              arguments['name'], arguments['pass'], arguments['name']);
+          if (status == WifiConnectionStatus.connected ||
+              status == WifiConnectionStatus.alreadyConnected) {
+            nearbyService.sendMessage(
+                selectedDevice!.deviceId, "Connection succesful");
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => WifiPage(arguments: arguments)));
+          } else if (status == WifiConnectionStatus.notConnected) {
+            nearbyService.sendMessage(
+                selectedDevice!.deviceId, "Connection Failed");
+            print("There was an error connecting");
+          }
+          // showToast(jsonEncode(data),
+          //     context: context,
+          //     axis: Axis.horizontal,
+          //     alignment: Alignment.center,
+          //     position: StyledToastPosition.bottom);
+        });
   }
 }
