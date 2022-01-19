@@ -6,7 +6,7 @@ import 'package:flutter_nearby_connections_example/wifi.dart';
 import 'package:flutter_styled_toast/flutter_styled_toast.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_nearby_connections/flutter_nearby_connections.dart';
-import 'package:wifi_configuration_2/wifi_configuration_2.dart';
+import 'package:wifi_iot/wifi_iot.dart';
 
 void main() {
   runApp(MyApp());
@@ -225,7 +225,7 @@ class _DevicesListScreenState extends State<DevicesListScreen> {
     await nearbyService.init(
         serviceType: 'mpconn',
         deviceName: devInfo,
-        strategy: Strategy.P2P_CLUSTER,
+        strategy: Strategy.Wi_Fi_P2P,
         callback: (isRunning) async {
           if (isRunning) {
             await nearbyService.stopAdvertisingPeer();
@@ -262,21 +262,24 @@ class _DevicesListScreenState extends State<DevicesListScreen> {
 
     receivedDataSubscription =
         nearbyService.dataReceivedSubscription(callback: (data) async {
-      print("dataReceivedSubscription: ${jsonEncode(data)}");
+      // print("dataReceivedSubscription: ${jsonEncode(data)}");
       print("Message:" + data['message']);
       Map arguments = jsonDecode(data['message'].toString());
 
-      WifiConnectionStatus status = await WifiConfiguration().connectToWifi(
-          arguments['name'], arguments['pass'], arguments['name']);
-      if (status == WifiConnectionStatus.connected ||
-          status == WifiConnectionStatus.alreadyConnected) {
+      bool status = await WiFiForIoTPlugin.connect(arguments['name'],
+          password:
+              arguments['pass'].toString().isEmpty ? null : arguments['pass'],
+          security: arguments['pass'].toString().isEmpty
+              ? NetworkSecurity.NONE
+              : NetworkSecurity.WEP);
+      if (status) {
         nearbyService.sendMessage(
             selectedDevice!.deviceId, "Connection succesful");
         Navigator.push(
             context,
             MaterialPageRoute(
                 builder: (context) => WifiPage(arguments: arguments)));
-      } else if (status == WifiConnectionStatus.notConnected) {
+      } else {
         nearbyService.sendMessage(
             selectedDevice!.deviceId, "Connection Failed");
         print("There was an error connecting");

@@ -1,7 +1,6 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:wifi_configuration_2/wifi_configuration_2.dart';
 import 'package:http/http.dart' as http;
 
 class WifiPage extends StatefulWidget {
